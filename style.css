@@ -106,13 +106,8 @@ body {
 
 .menu-title h3 {
   margin: 0;
+  font-size: 1.2rem;
   color: #ff6a00;
-  font-size: 1rem;
-  flex: 1;
-  margin-right: 10px; /* Adds spacing between name and price */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; /* Optional: cuts off if too long */
 }
 
 
