@@ -14,7 +14,6 @@ body {
 /* Navbar */
 .navbar {
   background-color: #ff6a00;
-  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -24,7 +23,7 @@ body {
 .nav-container {
   max-width: 1200px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,19 +191,30 @@ body {
    📱 Responsive Styles (Mobile)
    ============================ */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 
   .nav-links {
     flex-direction: column;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .nav-links a {
-    margin: 0.5rem 0;
+    margin: 0.4rem 0;
+    font-size: 1rem;
   }
 
   .section {
@@ -224,10 +234,7 @@ body {
   }
 
   .contact-form input,
-  .contact-form textarea {
-    font-size: 1rem;
-  }
-
+  .contact-form textarea,
   .contact-form button {
     font-size: 1rem;
   }
